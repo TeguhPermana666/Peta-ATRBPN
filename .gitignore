@@ -1,0 +1,55 @@
+# --- Python & Environment (Wajib) ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+.venv/
+venv-roof/
+# --- Jupyter Notebooks ---
+# Checkpoints otomatis (autosave) yang tidak perlu di-upload
+.ipynb_checkpoints/
+
+# --- YOLOv8 / Ultralytics (Sangat Penting) ---
+# Folder 'runs' berisi log training, grafik, dan weight model yang SANGAT BESAR
+runs/
+wandb/
+
+# --- Model Weights (File Berat) ---
+# Pre-trained models (yolov8n.pt, dll) dan hasil training (best.pt)
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.engine
+*.zip
+*.pdf
+*.docx
+*.whl
+# --- Dataset (Images & Labels) ---
+# Jangan upload gambar dataset karena ukurannya bisa GB-an
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+
+# Folder dataset spesifik (sesuaikan jika nama folder Anda beda)
+datasets/
+train/
+valid/
+test/
+PTNBPR-2/
+
+# File anotasi mentah yang besar
+_annotations.coco.json
+
+# --- VS Code / Editor ---
+.vscode/
+.idea/
+
+# --- OS System Files ---
+.DS_Store
+Thumbs.db
